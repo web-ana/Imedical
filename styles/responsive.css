@@ -1,0 +1,59 @@
+/* Navigation responsive styles */
+
+@media only screen and (max-width: 1024px) {
+  #main-nav ul,
+  #main-nav .btn {
+    display: none;
+  }
+  #menu-btn {
+    display: block;
+  }
+  #main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper {
+    margin: 0 72px;
+  }
+}
+
+/* Navigation responsive styles// */
+
+/* Header responsive styles */
+
+@media only screen and (max-width: 1024px) {
+  #main-nav {
+    margin-bottom: 60px;
+  }
+  #header {
+    margin: 0px 72px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-areas: "img" "banner" "box" "appoint";
+  }
+  .header-img {
+    display: none;
+  }
+  #header-img-responsive {
+    display: block;
+  }
+  .card-box {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .wrapper {
+    margin: 0 24px;
+  }
+
+  #header {
+    grid-gap: 32px;
+  }
+  #main-txt {
+    font-size: 48px;
+  }
+}
+/* Header responsive styles// */
