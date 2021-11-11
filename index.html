@@ -14,15 +14,18 @@
 <body>
     <nav id="main-nav">
         <img class="logo" src="./img/nav/logo.png" alt="Logo" />
-        <ul>
+        <label for="check"><img id="menu-btn" src="./img/nav/menu-btn.png" alt="menu button" /></label>
+        <input type="checkbox" id="check">
+        <ul id="main-nav-ul">
             <li><a href="">Home</a></li>
-            <li><a href="">Our Services</a></li>
+            <li><a href="#section-1">Our Services</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">About us</a></li>
             <li><a href="">Contact us</a></li>
         </ul>
-        <button class="btn-blue">Make Appointment</button>
-        <img id="menu-btn" src="./img/nav/menu-btn.png" alt="menu button" />
+        <button class="btn-blue"><a href="#appointment">Make Appointment</a></button>
+        <!-- <label for="check"><img id="menu-btn" src="./img/nav/menu-btn.png" alt="menu button" /></label>
+        <input type="checkbox" id="check"> -->
     </nav>
     <header id="header">
         <div class="header-left">
@@ -67,8 +70,8 @@
                 </div>
             </div>
             <div class="appoint">
-                <button class="btn-blue">Make Appointment <img src="./img/header/btn-arrow.png"
-                        alt="button with right arrow"></button>
+                <button class="btn-blue"><a href="#appointment">Make Appointment</a> <img
+                        src="./img/header/btn-arrow.png" alt="button with right arrow"></button>
                 <div class="appoint-p">
                     <p>Mon-Fri 10AM-9PM</p>
                     <p>Sat 10AM-2PM</p>
@@ -77,7 +80,7 @@
         </div>
         <div class="header-right">
             <img class="header-img" src="./img/header/header-1.png" alt="" />
-            <img id="header-img-responsive" src="./img/header/header-1-responsive.png"></img>
+            <img id="header-img-responsive" src="./img/header/responsive.png"></img>
         </div>
     </header>
     <section id="section-1" class="services">
@@ -365,10 +368,9 @@
                     <label for="footer-email"></label>
                     <input type="email" id="footer-email" name="footer-email" placeholder="Your Email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    <button>Subscribe</button>
+                    <button class="btn-sub">Subscribe</button>
                 </form>
             </div>
-
         </div>
         <div class="footer-copyright grid-col-2">
             <p class="gray-txt"><span>&#169;</span> 2021 iMedical, All Rights Reserved</p>
