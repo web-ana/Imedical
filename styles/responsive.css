@@ -1,0 +1,249 @@
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 1280px) {
+  body {
+    grid-template-columns: auto max-content auto;
+  }
+  #section-3,
+  #section-4 {
+    grid-template-columns: auto 1180px auto;
+    grid-template-columns: 1 /-1;
+  }
+  #section-3 > div,
+  #section-4 > div {
+    grid-column: 2 /-2;
+  }
+
+  body {
+    grid-template-columns: auto max-content auto;
+  }
+
+  /* navigation responsive styles */
+  #main-nav {
+    grid-template-columns: repeat(2, max-content);
+  }
+  #main-nav .btn-blue {
+    display: none;
+  }
+  #menu-btn {
+    display: block;
+  }
+
+  #main-nav #main-nav-ul {
+    display: none;
+  }
+  #check:checked ~ #main-nav-ul {
+    display: block;
+
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-row: 2;
+  }
+
+  #main-nav-ul {
+    display: none;
+  }
+
+  #main-nav ul li a {
+    padding-left: 44px;
+  }
+
+  #main-nav ul li:hover:before {
+    content: "-";
+    color: indianred;
+    margin-right: -14px;
+  }
+
+  /* header responsive styles */
+  .header-img {
+    display: none;
+  }
+  #header-img-responsive {
+    display: block;
+  }
+  #header {
+    grid-template-columns: max-content;
+  }
+  .header-right {
+    order: 1;
+  }
+  .header-left {
+    grid-template-columns: max-content;
+    order: 2;
+  }
+
+  .card-box {
+    grid-gap: 2em;
+  }
+
+  body {
+    grid-template-columns: auto max-content auto;
+    justify-content: center;
+  }
+
+  /* navigation responsive styles */
+  #main-nav {
+    grid-template-columns: repeat(2, max-content);
+  }
+  #main-nav .btn-blue {
+    display: none;
+  }
+  #menu-btn {
+    display: block;
+  }
+
+  #main-nav #main-nav-ul {
+    display: none;
+  }
+  #check:checked ~ #main-nav-ul {
+    display: block;
+
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-row: 2;
+  }
+
+  #main-nav-ul {
+    display: none;
+  }
+
+  #main-nav ul li a {
+    padding-left: 44px;
+  }
+
+  #main-nav ul li:hover:before {
+    content: "-";
+    color: indianred;
+    margin-right: -14px;
+  }
+
+  /* header responsive styles */
+  .header-img {
+    display: none;
+  }
+  #header-img-responsive {
+    display: block;
+  }
+  #header {
+    grid-template-columns: max-content;
+  }
+  .header-right {
+    order: 1;
+  }
+  .header-left {
+    grid-template-columns: max-content;
+    order: 2;
+  }
+
+  .card-box {
+    grid-gap: 2em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* section responsive styles end */
+  .services-content div:last-child {
+    display: none;
+  }
+  .services-content div img,
+  .content-card {
+    width: 424px;
+  }
+  .services-content,
+  .why-us-content,
+  .doctors-content {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    justify-content: space-between;
+  }
+  .statistics,
+  .footer-main-content,
+  .footer-copyright,
+  .footer-copyright > ul {
+    grid-template-columns: 1fr;
+  }
+  .statistics div:nth-child(2) {
+    border: none;
+  }
+
+  #section-3,
+  #section-4 {
+    grid-template-columns: 72px 880px 72px;
+    grid-template-columns: 1 /-1;
+  }
+  #section-3 > div,
+  #section-4 > div {
+    grid-column: 2 /-2;
+  }
+
+  .footer-copyright > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: start;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body {
+    grid-template-columns: 24px 366px auto;
+    justify-content: center;
+  }
+
+  h1,
+  h1 > span {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .header-p {
+    font-size: 1rem;
+  }
+  .header-right > img,
+  .services-content div img,
+  .content-card {
+    width: 366px;
+  }
+  .card-box,
+  .appoint {
+    max-width: 366px;
+    grid-template-columns: max-content;
+  }
+  .services-content,
+  .why-us-content,
+  .doctors-content,
+  .section-5-content {
+    grid-template-columns: minmax(min-content, 1fr);
+    justify-content: space-between;
+  }
+  .section-5-content > div:last-child {
+    display: none;
+  }
+
+  #doctors > div.hat {
+    grid-template-columns: max-content;
+    grid-gap: 2em;
+  }
+  #section-3,
+  #section-4 {
+    grid-template-columns: 24px 366px 24px;
+    grid-template-columns: 1 /-1;
+  }
+  #section-3 > div,
+  #section-4 > div {
+    grid-column: 2 /-2;
+  }
+  #appointment {
+    grid-template-columns: max-content;
+  }
+  #appointment > * {
+    grid-column: 1;
+  }
+  #appointment input,
+  #appointment textarea {
+    max-width: 366px;
+  }
+}
